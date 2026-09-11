@@ -75,6 +75,48 @@
 			<Item Name="Stream-c(dbl,dbl).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(dbl,dbl).lvlib"/>
 			<Item Name="Update Probe Details String.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/Update Probe Details String.vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="KC EXE" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{F9FD1B37-17E5-4544-8043-F8C44C154583}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{238459AD-F761-4E72-9C23-407A51EE8D64}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{A601140F-8C5E-4A77-A2B9-62C03BED703C}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">KC EXE</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Keithley 2260B Control App</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{32C8870B-1CD5-4385-91F5-BCCC498ABB23}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">2260B Control.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Keithley 2260B Control App/2260B Control.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Keithley 2260B Control App/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EBE6738D-CE8C-452B-8EF6-581E3D122A8F}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">University of Bath</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">KC EXE</Property>
+				<Property Name="TgtF_internalName" Type="Str">KC EXE</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 University of Bath</Property>
+				<Property Name="TgtF_productName" Type="Str">KC EXE</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{DEEDE50D-894A-4EFC-985F-A52708FF9ABB}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">2260B Control.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
