@@ -94,6 +94,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Keithley 2260B Control App</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{32C8870B-1CD5-4385-91F5-BCCC498ABB23}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">2260B Control.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Keithley 2260B Control App/2260B Control.exe</Property>
