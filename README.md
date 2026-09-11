@@ -21,9 +21,20 @@ A LabVIEW application for controlling a Keithley 2260B programmable DC power sup
 The front panel guides the user through a fixed sequence:
 
 1. Configure the instrument connection and test settings.
-2. Press **Confirm Inputs** to initialise and configure the Keithley 2260B.
-3. Press **Start** to begin output cycling, measurement acquisition, and optional recording.
-4. Press **Stop** to disable the output and close the application safely.
+
+<img alt="Configure image" src="https://github.com/user-attachments/assets/458213b6-a2a2-45c9-98cb-2a8396c59a85" />
+
+3. Press **Confirm Inputs** to initialise and configure the Keithley 2260B.
+
+<img alt="Confirm image" src="https://github.com/user-attachments/assets/6a2c6808-aa2a-4cfa-b7d6-d7b82701905a" />
+
+5. Press **Start** to begin output cycling, measurement acquisition, and optional recording.
+
+<img alt="Start image" src="https://github.com/user-attachments/assets/6d0da61b-dba4-48d5-bff8-37c83940ebc5" />
+
+7. Press **Stop** to disable the output and close the application safely.
+
+<img alt="Stop image" src="https://github.com/user-attachments/assets/8f37669d-7eba-49bd-98fd-5a1d4f25305b" />
 
 ### Initial State
 
@@ -178,58 +189,23 @@ To run the compiled application on a computer without the LabVIEW development en
 3. Right-click the application build specification, for example:
 
    ```text
-   Keithley 2260B Control
+   KC EXE
    ```
 
 4. Select **Build**.
 5. When the build completes, open the configured build-output directory.
-6. Run:
+   
+   ```text
+   C:\Keithley 2260B Control App
+   ```
+   
+7. Run:
 
    ```text
-   Keithley 2260B Control.exe
+   2260B Control.exe
    ```
 
 The `Results` directory is created alongside the running application when the first recorded experiment starts.
-
-### Recommended Build Specification Settings
-
-Use `Main.vi` as the startup VI and include all required project VIs, typedefs, channel-wire dependencies, and Keithley driver dependencies.
-
-Recommended executable behaviour:
-
-- Show the front panel when launched
-- Use the application title `Keithley 2260B Control`
-- Hide the LabVIEW toolbar, Run button, Abort button, and Run Continuously button
-- Prevent arbitrary front-panel resizing if controls are not configured to scale
-- Retain scrollbars as a fallback for smaller displays
-- Close the application after the front panel closes
-- Build the executable and its support files into one dedicated application directory
-
-## Architecture
-
-The application uses an event-driven producer/consumer design with parallel loops:
-
-- **User Events loop**: Handles front-panel actions and broadcasts application commands using an Event Messenger channel.
-- **Control loop**: Owns the Keithley VISA session, configures the power supply, controls timed output switching, and reads voltage/current measurements.
-- **File loop**: Receives measurements through a stream channel and writes valid samples to CSV when recording is enabled.
-
-The Control loop uses retained absolute timing values for:
-
-- The next output-state transition
-- The next voltage/current measurement
-
-This keeps output timing and measurement acquisition independent while allowing user events to remain responsive.
-
-## Safe Shutdown
-
-When **Stop** is pressed, the application:
-
-1. Broadcasts the exit command to each loop.
-2. Commands the Keithley output off.
-3. Stops measurement acquisition.
-4. Finalises and closes the results file if recording is enabled.
-5. Closes the Keithley VISA session.
-6. Exits the application loops cleanly.
 
 ## Notes
 
