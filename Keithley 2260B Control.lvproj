@@ -17,6 +17,7 @@
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Create File.vi" Type="VI" URL="../SubVIs/Create File.vi"/>
 			<Item Name="Enable UI.vi" Type="VI" URL="../SubVIs/Enable UI.vi"/>
+			<Item Name="Format Data to File.vi" Type="VI" URL="../SubVIs/Format Data to File.vi"/>
 			<Item Name="Initialise Front Panel.vi" Type="VI" URL="../SubVIs/Initialise Front Panel.vi"/>
 			<Item Name="Loop Error Stop.vi" Type="VI" URL="../SubVIs/Loop Error Stop.vi"/>
 		</Item>
@@ -46,7 +47,9 @@
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -60,12 +63,16 @@
 				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
 			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
 			<Item Name="Event Messenger-c(str,var).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Event Messenger-c(str,var).lvlib"/>
 			<Item Name="Keithley 2260B Examples.vi" Type="VI" URL="../Examples/Keithley 2260B Examples.vi"/>
 			<Item Name="Keithley 2260B Output DC Voltage and Current.vi" Type="VI" URL="../Examples/Keithley 2260B Output DC Voltage and Current.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="PipeLogic.lvclass" Type="LVClass" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/PipeLogic/PipeLogic.lvclass"/>
 			<Item Name="ProbeFormatting.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/ProbeFormatting.vi"/>
+			<Item Name="Stream-c(dbl,dbl).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Stream-c(dbl,dbl).lvlib"/>
 			<Item Name="Update Probe Details String.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/Update Probe Details String.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
