@@ -14,6 +14,9 @@
 			<Item Name="App Data.ctl" Type="VI" URL="../Controls/App Data.ctl"/>
 			<Item Name="UI References.ctl" Type="VI" URL="../Controls/UI References.ctl"/>
 		</Item>
+		<Item Name="Icons" Type="Folder">
+			<Item Name="KC Icon.ico" Type="Document" URL="../Icons/KC Icon.ico"/>
+		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Create File.vi" Type="VI" URL="../SubVIs/Create File.vi"/>
 			<Item Name="Enable UI.vi" Type="VI" URL="../SubVIs/Enable UI.vi"/>
@@ -101,6 +104,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Keithley 2260B Control App/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Icons/KC Icon.ico</Property>
 				<Property Name="Source[0].itemID" Type="Str">{EBE6738D-CE8C-452B-8EF6-581E3D122A8F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
