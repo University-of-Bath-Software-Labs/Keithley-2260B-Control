@@ -24,15 +24,15 @@ The front panel guides the user through a fixed sequence:
 
 <img alt="Configure image" src="https://github.com/user-attachments/assets/458213b6-a2a2-45c9-98cb-2a8396c59a85" />
 
-3. Press **Confirm Inputs** to initialise and configure the Keithley 2260B.
+2. Press **Confirm Inputs** to initialise and configure the Keithley 2260B.
 
 <img alt="Confirm image" src="https://github.com/user-attachments/assets/6a2c6808-aa2a-4cfa-b7d6-d7b82701905a" />
 
-5. Press **Start** to begin output cycling, measurement acquisition, and optional recording.
+3. Press **Start** to begin output cycling, measurement acquisition, and optional recording.
 
 <img alt="Start image" src="https://github.com/user-attachments/assets/6d0da61b-dba4-48d5-bff8-37c83940ebc5" />
 
-7. Press **Stop** to disable the output and close the application safely.
+4. Press **Stop** to disable the output and close the application safely.
 
 <img alt="Stop image" src="https://github.com/user-attachments/assets/8f37669d-7eba-49bd-98fd-5a1d4f25305b" />
 
@@ -98,20 +98,20 @@ After **Start** is pressed:
 
 ## Data Recording
 
-Recording is selected before the experiment starts using **Record?**.
+Recording can be toggled at any point during the experiment using **Record?**.
 
 When recording is enabled, each CSV row contains:
 
 ```text
-Timestamp,Voltage (V),Current (A)
+Timestamp, Voltage (V), Current (A)
 ```
 
 Example:
 
 ```text
-15:20:13.12,9.998000,0.000000
-15:20:13.37,9.998000,0.000000
-15:20:13.62,0.000000,0.000000
+15:20:13.12, 9.998000, 0.000000
+15:20:13.37, 9.998000, 0.000000
+15:20:13.62, 0.000000, 0.000000
 ```
 
 ### File Naming
@@ -165,17 +165,26 @@ To run the compiled application on a computer without the LabVIEW development en
    Keithley 2260B Control.lvproj
    ```
 
+   <img alt="File explorer image" src="https://github.com/user-attachments/assets/d6dde510-8bf8-48ca-86fb-eb87fd0a4457" />
+
+
 5. Open:
 
    ```text
    Main.vi
    ```
 
+   <img alt="Main VI image" src="https://github.com/user-attachments/assets/89937f75-0b48-49b6-89db-4711d47bb5a0" />
+
+
 6. Press the LabVIEW **Run** arrow.
+
+   <img alt="run image" src="https://github.com/user-attachments/assets/7fe83db9-3ba1-42fc-99f2-6d9f762a879b" />
+
 7. Select the VISA resource and enter the required serial and test settings.
-8. Select **Record?** if CSV logging is required.
-9. Press **Confirm Inputs**.
-10. Press **Start**.
+8. Press **Confirm Inputs**.
+9. Press **Start**.
+10. Toggle **Record?** as required to write to a CSV file.
 11. Press **Stop** to end the test and close the application safely.
 
 > Always use **Stop** to finish a test. This disables the Keithley output, closes the VISA session, and finalises the results file.
@@ -185,25 +194,33 @@ To run the compiled application on a computer without the LabVIEW development en
 ### Build the Application
 
 1. Open `Keithley 2260B Control.lvproj`.
+
+  <img alt="File explorer image" src="https://github.com/user-attachments/assets/d6dde510-8bf8-48ca-86fb-eb87fd0a4457" />
+  
 2. In Project Explorer, expand **Build Specifications**.
-3. Right-click the application build specification, for example:
+3. Right-click the application build specification:
 
    ```text
    KC EXE
    ```
 
 4. Select **Build**.
+   
+   <img alt="Build image" src="https://github.com/user-attachments/assets/9df44821-f591-49e0-ae60-96101dde0ad8" />
+
 5. When the build completes, open the configured build-output directory.
    
    ```text
    C:\Keithley 2260B Control App
    ```
    
-7. Run:
+6. Run:
 
    ```text
    2260B Control.exe
    ```
+   <img alt=":Launch app image" src="https://github.com/user-attachments/assets/97799552-1596-4d78-8bb7-7975b01ec326" />
+
 
 The `Results` directory is created alongside the running application when the first recorded experiment starts.
 
